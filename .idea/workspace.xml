@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b732769d-a4c7-4a9c-a178-f87e947d1956" name="Default Changelist" comment="" />
+    <list default="true" id="b732769d-a4c7-4a9c-a178-f87e947d1956" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/main.go" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -16,10 +19,16 @@
     </option>
   </component>
   <component name="GOROOT" path="/usr/local/go" />
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="GoLibraries">
     <option name="indexEntireGoPath" value="false" />
   </component>
   <component name="ProjectId" id="1VXdwf1VXn5fcrl8H5f390Tet2W" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -37,6 +46,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="go.import.settings.migrated" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -123,6 +133,9 @@
       </list>
     </option>
   </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="b732769d-a4c7-4a9c-a178-f87e947d1956" name="Default Changelist" comment="" />
@@ -131,6 +144,7 @@
       <option name="presentableId" value="Default" />
       <updated>1577403613689</updated>
       <workItem from="1577403614942" duration="6237000" />
+      <workItem from="1577458972206" duration="5153000" />
     </task>
     <servers />
   </component>
@@ -146,29 +160,34 @@
       <screen x="0" y="23" width="1440" height="801" />
     </state>
     <state x="184" y="83" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1440.801@0.23.1440.801" timestamp="1577403700013" />
-    <state width="1358" height="191" key="GridCell.Tab.0.bottom" timestamp="1577410112003">
-      <screen x="0" y="23" width="1440" height="801" />
+    <state width="1884" height="334" key="GridCell.Tab.0.bottom" timestamp="1577464004736">
+      <screen x="0" y="23" width="2560" height="1337" />
     </state>
     <state width="1358" height="191" key="GridCell.Tab.0.bottom/0.23.1440.801@0.23.1440.801" timestamp="1577410112003" />
-    <state width="1358" height="191" key="GridCell.Tab.0.center" timestamp="1577410112002">
-      <screen x="0" y="23" width="1440" height="801" />
+    <state width="1884" height="334" key="GridCell.Tab.0.bottom/2560.23.3440.1417/-3440.23.3440.1417/0.23.2560.1337@0.23.2560.1337" timestamp="1577464004736" />
+    <state width="1884" height="334" key="GridCell.Tab.0.center" timestamp="1577464004735">
+      <screen x="0" y="23" width="2560" height="1337" />
     </state>
     <state width="1358" height="191" key="GridCell.Tab.0.center/0.23.1440.801@0.23.1440.801" timestamp="1577410112002" />
-    <state width="1358" height="191" key="GridCell.Tab.0.left" timestamp="1577410112002">
-      <screen x="0" y="23" width="1440" height="801" />
+    <state width="1884" height="334" key="GridCell.Tab.0.center/2560.23.3440.1417/-3440.23.3440.1417/0.23.2560.1337@0.23.2560.1337" timestamp="1577464004735" />
+    <state width="1884" height="334" key="GridCell.Tab.0.left" timestamp="1577464004735">
+      <screen x="0" y="23" width="2560" height="1337" />
     </state>
     <state width="1358" height="191" key="GridCell.Tab.0.left/0.23.1440.801@0.23.1440.801" timestamp="1577410112002" />
-    <state width="1358" height="191" key="GridCell.Tab.0.right" timestamp="1577410112003">
-      <screen x="0" y="23" width="1440" height="801" />
+    <state width="1884" height="334" key="GridCell.Tab.0.left/2560.23.3440.1417/-3440.23.3440.1417/0.23.2560.1337@0.23.2560.1337" timestamp="1577464004735" />
+    <state width="1884" height="334" key="GridCell.Tab.0.right" timestamp="1577464004735">
+      <screen x="0" y="23" width="2560" height="1337" />
     </state>
     <state width="1358" height="191" key="GridCell.Tab.0.right/0.23.1440.801@0.23.1440.801" timestamp="1577410112003" />
+    <state width="1884" height="334" key="GridCell.Tab.0.right/2560.23.3440.1417/-3440.23.3440.1417/0.23.2560.1337@0.23.2560.1337" timestamp="1577464004735" />
     <state x="208" y="23" key="SettingsEditor" timestamp="1577405744825">
       <screen x="0" y="23" width="1440" height="801" />
     </state>
     <state x="208" y="23" key="SettingsEditor/0.23.1440.801@0.23.1440.801" timestamp="1577405744825" />
-    <state x="385" y="148" width="670" height="676" key="search.everywhere.popup" timestamp="1577410002797">
-      <screen x="0" y="23" width="1440" height="801" />
+    <state x="684" y="232" width="1192" height="1129" key="search.everywhere.popup" timestamp="1577463937621">
+      <screen x="0" y="23" width="2560" height="1337" />
     </state>
     <state x="385" y="148" width="670" height="676" key="search.everywhere.popup/0.23.1440.801@0.23.1440.801" timestamp="1577410002797" />
+    <state x="684" y="232" width="1192" height="1129" key="search.everywhere.popup/2560.23.3440.1417/-3440.23.3440.1417/0.23.2560.1337@0.23.2560.1337" timestamp="1577463937621" />
   </component>
 </project>
