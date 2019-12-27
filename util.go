@@ -74,6 +74,48 @@ func (this *IntVec2) ToString () string{
 	return "[X:" + strconv.Itoa(this.X) + ",Y:" + strconv.Itoa(this.Y) + "]";
 }
 
+func ArrayToInt (arr []int) int{
+	sum := 0;
+	for i := 0; i < len(arr); i++{
+		v := arr[len(arr) - 1 - i];
+		sum += v * int((math.Pow10(i)));
+	}
+	return sum;
+}
+
+func IntToDigitArray (val int) []int{
+
+	str := strconv.Itoa(val);
+	res := make([]int, len(str));
+	for i, c := range str{
+		v, _ := strconv.Atoi(string(c)) // Pretty dumb/wasteful but this isn't performance intensive
+		res[i] = v;
+	}
+	return res;
+}
+
+func SpeakAndSayArray(state []int) []int {
+	res := make([]int, 0);
+	iter := 1;
+	currVal := state[0];
+	for i := 1; i < len(state); i++ {
+		k := state[i];
+		if(k == currVal){
+			iter++;
+		} else{
+			res = append(res, iter);
+			res = append(res, currVal);
+			currVal = k;
+			iter = 1;
+		}
+	}
+	res = append(res, iter);
+	res = append(res, currVal);
+	return res;
+}
+
+
+
 func (this *IntVec2) GetVisiblePoints(points []*IntVec2) []*IntVec2{
 	res := make([]*IntVec2, 0);
 	candidate := this;
