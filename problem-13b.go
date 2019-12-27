@@ -7,16 +7,16 @@ import (
 	"strings"
 )
 
-type Problem13A struct {
+type Problem13B struct {
 	BestSeating []int;
 	BestSeatingScore int;
 }
 
-func (this *Problem13A) Solve() {
-	Log.Info("Problem 13A solver beginning!")
+func (this *Problem13B) Solve() {
+	Log.Info("Problem 13B solver beginning!")
 
 
-	file, err := os.Open("source-data/input-day-13a.txt");
+	file, err := os.Open("source-data/input-day-13b.txt");
 	if err != nil {
 		Log.FatalError(err);
 	}
@@ -54,6 +54,14 @@ func (this *Problem13A) Solve() {
 	}
 	Log.Info("Finished parsing rule set");
 
+	arr := make(map[int]int);
+	for k, v := range ruleSet{
+		arr[k] = 0;
+		rulesP := *v;
+		rulesP['X'] = 0;
+	}
+	ruleSet['X'] = &arr;
+
 	uniqueSeats := make([]int, 0);
 	for k, _ := range ruleSet{
 		uniqueSeats = append(uniqueSeats, k);
@@ -63,7 +71,7 @@ func (this *Problem13A) Solve() {
 	})
 	Log.Info("Best seating determined %s - with total score %d", AsciiArrayToString(this.BestSeating), this.BestSeatingScore)
 }
-func (this *Problem13A) ScoreSeating(seating []int, rules map[int]*map[int]int) {
+func (this *Problem13B) ScoreSeating(seating []int, rules map[int]*map[int]int) {
 	//Log.Info("Considering " + AsciiArrayToString(seating));
 	//config := AsciiArrayToString(seating);
 	//shouldLog := config == "CDAB";

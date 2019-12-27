@@ -1,6 +1,7 @@
 package main
 
 import (
+	"bufio"
 	"errors"
 	"fmt"
 	"github.com/nfnt/resize"
@@ -21,6 +22,59 @@ type IntegerGrid2D struct {
 
 func (this *IntegerGrid2D) Init() {
 	this.Data = make(map[int]*map[int]int);
+}
+
+func (this *IntegerGrid2D) ParseAsciiGrid(fileName string) error {
+	file, err := os.Open(fileName);
+	if err != nil {
+		return err;
+	}
+	defer file.Close()
+
+
+	scanner := bufio.NewScanner(file);
+
+	y := 0;
+	x := 0;
+	for scanner.Scan() {
+		line := strings.TrimSpace(scanner.Text());
+		if (line != "") {
+			for _, c := range line{
+				this.SetValue(x, y, int(c));
+				x++;
+			}
+		}
+		y++;
+		x=0;
+	}
+	return nil;
+}
+
+func (this *IntegerGrid2D) Count8DirNeighborsMatching(x int, y int, targetVal int) int {
+	sum := 0;
+	// Top Row
+	sum += this.CountIf(x-1,y-1,targetVal);
+	sum += this.CountIf(x,y-1,targetVal);
+	sum += this.CountIf(x+1,y-1,targetVal);
+
+	// Middle Row
+	sum += this.CountIf(x-1,y,targetVal);
+	// Center not included this.CountIf(x,y,targetVal);
+	sum += this.CountIf(x+1,y,targetVal);
+
+	// Bottom row
+	sum += this.CountIf(x-1,y+1,targetVal);
+	sum += this.CountIf(x,y+1,targetVal);
+	sum += this.CountIf(x+1,y+1,targetVal);
+
+	return sum;
+}
+
+func (this *IntegerGrid2D) CountIf(x int, y int, targetVal int) int {
+	if(this.GetValue(x, y) == targetVal){
+		return 1;
+	}
+	return 0;
 }
 
 func (this *IntegerGrid2D) Clone() *IntegerGrid2D {

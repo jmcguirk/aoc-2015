@@ -244,6 +244,14 @@ func IsGTEOrEqual(registersA []int, registersB []int) bool {
 	return true;
 }
 
+func AsciiArrayToString(values []int) string {
+	var string strings.Builder;
+	for _, v := range values{
+		string.WriteByte(byte(v));
+	}
+	return string.String();
+}
+
 func ReverseSlice(s interface{}) {
 	size := reflect.ValueOf(s).Len()
 	swap := reflect.Swapper(s)
