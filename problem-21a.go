@@ -14,6 +14,7 @@ func (this *Problem21A) Solve() {
 
 	rpg := &RPGSimulation{};
 	rpg.Init();
+	rpg.AddPlayer(100, 0, 0);
 	rpg.AddBoss(100, 8, 2);
 	equipment := make([]*ShopItem, 4);
 
