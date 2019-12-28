@@ -25,6 +25,9 @@ func (this *Problem20A) Solve() {
 			Log.Info("%d - %d", i, sum);
 		}
 	}
+	// [INFO] 1.15h - 1500000 - 19001807
+	//[INFO] 1.30h - 1600000 - 19600218
+	//[INFO] 1.41h - First index occurs at 1663200
 	// 887040 too high
 	// 1663200 too high
 }
