@@ -8,14 +8,14 @@ func (this *Problem20A) Solve() {
 	Log.Info("Problem 20A solver beginning!")
 
 
+
+
 	targetSum := 29000000;
 	for i := 1; i <= targetSum; i++{
-		sum := i * 11;
+		sum := i * 10;
 		for j := 1; j <= i/2; j++{
 			if(i % j == 0){
-				if(j * 50 <= i){
-					sum += j * 11;
-				}
+				sum += j * 10;
 			}
 		}
 		if(sum >= targetSum){
