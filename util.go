@@ -395,3 +395,23 @@ func PrimesLessThan(N int) (primes []int) {
 	}
 	return
 }
+
+//Source - https://blog.abelotech.com/posts/fibonacci-numbers-golang/
+func Fibonacci(n uint) uint64 {
+	if n <= 1 {
+		return uint64(n)
+	}
+
+	var n2, n1 uint64 = 0, 1
+
+	for i := uint(2); i < n; i++ {
+		n2, n1 = n1, n1+n2
+	}
+
+	return n2 + n1
+}
+
+func TriangularTerm(n int) int {
+	// a*n^2 + b * n + c
+	return (n*(n+1))/2;
+}
