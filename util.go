@@ -83,6 +83,23 @@ func ArrayToInt (arr []int) int{
 	return sum;
 }
 
+func SumArray (arr []int) int{
+	sum := 0;
+	for _, v := range arr {
+		sum += v;
+	}
+	return sum;
+}
+
+
+func MulArray (arr []int) int{
+	sum := 1;
+	for _, v := range arr {
+		sum *= v;
+	}
+	return sum;
+}
+
 func IntToDigitArray (val int) []int{
 
 	str := strconv.Itoa(val);
